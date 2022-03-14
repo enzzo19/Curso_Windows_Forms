@@ -30,11 +30,18 @@ namespace Programa_01
         private void btn_despedida_Click(object sender, EventArgs e)
         {
             lbl_message.Text = "Chau a Todos :)";
+            this.Text = "Saludito_01";
+
         }
 
         private void btn_saludo_Click(object sender, EventArgs e)
         {
             lbl_message.Text = "Hola a Todos :)";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lbl_message.Text = "";
         }
     }
 }

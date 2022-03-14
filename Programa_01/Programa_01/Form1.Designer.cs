@@ -29,6 +29,7 @@ namespace Programa_01
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_message = new System.Windows.Forms.Label();
             this.btn_despedida = new System.Windows.Forms.Button();
             this.btn_saludo = new System.Windows.Forms.Button();
@@ -72,8 +73,10 @@ namespace Programa_01
             this.Controls.Add(this.btn_saludo);
             this.Controls.Add(this.btn_despedida);
             this.Controls.Add(this.lbl_message);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Programa_01";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
